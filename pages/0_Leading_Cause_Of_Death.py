@@ -27,13 +27,7 @@ st.dataframe(df)
 # Create a bar chart
 st.subheader('Deaths by Cause (per 100,000 population)')
 
-# 값의 크기 순서대로 데이터프레임 정렬 (내림차순 정렬)
-df_sorted = df.set_index('Cause of Death').sort_values(by='value_column', ascending=False)
-
-# 정렬된 데이터프레임을 이용하여 막대 차트 그리기
-st.bar_chart(df_sorted)
-
-#st.bar_chart(df.set_index('Cause of Death'))
+st.bar_chart(df.set_index('Cause of Death'))
 
 # Additional Information
 st.write("""
