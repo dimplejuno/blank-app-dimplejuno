@@ -7,9 +7,9 @@ st.set_page_config(page_title="Black Population and Leading Causes of Death in A
 
 # Data for counties with the highest Black population
 data_black_population = {
-    'County': ['Jefferson County'],
-    'LAT': [33.5207],
-    'LON': [-86.8025]
+    'County': ['Macon County'],
+    'LAT': [32.4043],
+    'LON': [-85.6920]
 }
 
 # Data for top 10 causes of death in Jefferson County
@@ -37,5 +37,5 @@ st.title("Map of County with Highest Black Population in Alabama")
 components.html(google_maps_iframe, height=600)
 
 # Display top 10 causes of death in Jefferson County
-st.header("Top 10 Causes of Death in Jefferson County")
+st.header("Top 10 Causes of Death in Macon County")
 st.table(df_causes_of_death)
